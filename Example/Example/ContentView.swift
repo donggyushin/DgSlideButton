@@ -10,14 +10,12 @@ import DgSlideButton
 
 struct ContentView: View {
     
-    @State var slideButtonEnable: Bool = true
+    @State var slideButtonEnable: Bool = true // Make it false if you want to disable button
     
     var body: some View {
-        VStack(spacing: 40) {
-            SlideButton(themeColor: .green, placeholder: "Placeholder", completion: nil)
-                .allowsHitTesting(slideButtonEnable)
-                .frame(height: 60)
-        }
+        SlideButton(themeColor: .green, placeholder: "Placeholder", completion: nil)
+            .allowsHitTesting(slideButtonEnable)
+            .frame(height: 60) // Adjust suitable height. (Button is designed for 60px)
     }
 }
 
