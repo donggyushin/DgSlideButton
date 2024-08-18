@@ -34,6 +34,7 @@ public struct SlideButton: View {
                 if let placeholder {
                     ZStack {
                         Text(placeholder)
+                            .foregroundStyle(.white)
                     }
                 }
                 
@@ -59,6 +60,7 @@ public struct SlideButton: View {
                                 .padding(8)
                                 
                             Image(systemName: "chevron.right.2")
+                                .foregroundStyle(.white)
                         }
                         .offset(x: circleOffset)
                         .gesture(
@@ -100,5 +102,5 @@ public struct SlideButton: View {
         print("success is \(success)")
     }
     .frame(height: 60)
-    .preferredColorScheme(.dark)
+//    .preferredColorScheme(.dark)
 }

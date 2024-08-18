@@ -12,7 +12,7 @@ Once you have your Swift package set up, adding `DgSlideButton` as a dependency 
 
 ```
 dependencies: [
-   .package(url: "https://github.com/donggyushin/DgSlideButton.git", .upToNextMajor(from: "1.0.0"))
+   .package(url: "https://github.com/donggyushin/DgSlideButton.git", .upToNextMajor(from: "1.1.0"))
 ]
 ```
 
